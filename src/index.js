@@ -1,5 +1,5 @@
 import * as utils from './utils.js';
-import Polyglot from 'node-polyglot';
+const Polyglot = require('node-polyglot');
 
 function getDefaults() {
   return {
@@ -16,6 +16,9 @@ class PolyglotFormat {
   init(i18next, options) {
     const i18nextOptions = (i18next && i18next.options && i18next.options.i18nFormat) || {};
     this.options = utils.defaults(i18nextOptions, options, this.options || {}, getDefaults());
+
+    // expose
+    if (i18next) i18next.Polyglot = Polyglot;
   }
 
   parse(res, options, lng, ns, key) {
