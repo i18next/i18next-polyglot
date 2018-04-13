@@ -5,7 +5,7 @@
 [![npm version](https://img.shields.io/npm/v/i18next-polyglot.svg?style=flat-square)](https://www.npmjs.com/package/i18next-polyglot)
 [![David](https://img.shields.io/david/i18next/i18next-polyglot.svg?style=flat-square)](https://david-dm.org/i18next/i18next-polyglot)
 
-This changes i18n format from i18next json to Polyglot using [yahoo/intl-messageformat](https://github.com/yahoo/intl-messageformat)
+This changes i18n format from i18next json to polyglot using [airbnb/polyglot.js](https://github.com/airbnb/polyglot.js)
 
 # Getting started
 
